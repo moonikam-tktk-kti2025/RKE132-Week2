@@ -13,13 +13,17 @@ Kui protsent ≥ 100: väljasta: „Suurepärane, oled oma päevase eesmärgi t�
 #Muidu kui % on >= 100, siis väljasta ekraanile: "Suurepärane, oled oma päevase eesmärgi täitnud!".
 #Lõpeta programm.
 
-goal = 8
-water = int(input('Mitu klaasi vett oled täna joonud? 1 klaas = 250 ml. '))
-percent = (water/goal) * 100
+DAILY_WATER_ML = 2000
+GLASS_VOLUME_ML = 250
 
-if percent < 50:
+daily_glasses = DAILY_WATER_ML / GLASS_VOLUME_ML
+
+glasses_drunk = int(input('Mitu klaasi vett oled täna joonud? (1 klaas = 250 ml) '))
+percentage = (glasses_drunk / daily_glasses) * 100
+
+if percentage < 50:
     print('Joo rohkem vett, keha vajab seda!')
-elif percent < 100:
+elif percentage < 100:
     print('Tubli, jätka samas vaimus!')
 else:
     print('Suurepärane, oled oma päevase eesmärgi täitnud!')
