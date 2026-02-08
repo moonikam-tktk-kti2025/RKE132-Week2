@@ -9,7 +9,6 @@ Kui kasutaja sisestab midagi muud, väljasta: „Tere tulemast, [Perekonnanimi]!
 #Küsi kasutajalt tema sugu (m/n).
 #Kui sugu on võrdne "m"-ga, siis väljasta ekraanile "Tere, härra [Perekonnanimi]!".
 #Muidu kui sugu on võrdne "n"-ga, siis väljasta ekraanile "Tere, proua [Perekonnanimi]!".
-#Muidu (kui sisestus ei olnud õige), siis väljasta ekraanile: "Vale väärtus.".
 #Muidu (kui sisestus ei olnud õige), siis väljasta ekraanile: "Tere tulemast, [Perekonnanimi]! (sugu ei olegi tähtis).".
 #Lõpeta programm.
 
@@ -21,4 +20,4 @@ if sugu == 'm':
 elif sugu == 'n':
     print(f'Tere, proua {perekonnanimi}!')
 else:
-    print(f'Tere tulemast, {Perekonnanimi}! (sugu ei olegi tähtis).')
+    print(f'Tere tulemast, {perekonnanimi}! (sugu ei olegi tähtis).')
